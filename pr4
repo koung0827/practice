@@ -1,0 +1,21 @@
+class Animal {
+    String name;
+    int age;
+
+    Animal(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    void speak() {
+        System.out.println(name + "가(이) " + age + "살입니다.");
+    }
+
+    public static void main(String[] args) {
+        Animal dog = new Animal("강아지", 3);
+        Animal cat = new Animal("고양이", 2);
+
+        dog.speak();
+        cat.speak();
+    }
+}
